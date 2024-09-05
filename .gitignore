@@ -1,0 +1,38 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE and editor folders
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+*.swp
+*.swo
+*.swn
+
+# macOS Finder files
+.AppleDouble
+.LSOverride
+
+# Windows files
+Desktop.ini
+$RECYCLE.BIN/
