@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Bar</title>
+  <!-- Load Material Design CSS via Proxy -->
+  <link href="/proxy/css" rel="stylesheet">
+  <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+</head>
+
+<body>
+  <h1>You're so close to your next Badge!</h1>
+  <div id="progress-container">
+    <!-- "value" attr changes the progress bar-->
+    <md-linear-progress value="0.6"></md-linear-progress>
+  </div>
+  <div>progressbar ends here</div>
+</body>
+
+</html>
